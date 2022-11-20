@@ -68,6 +68,6 @@ body {
 
 @media only screen and (max-width: 450px) {
     .bg-marquee {
-        width: 100vw;
+        width: 90vw;
     }
 }
