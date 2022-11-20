@@ -6,17 +6,13 @@
     box-sizing: border-box;
 }
 
-body, html {
-
-}
-
 .container {
     position: relative;
-    height: 100vh;
 }
 
 body {
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +42,7 @@ body {
 }
 
 .bg-marquee:hover > .inner-rect {
-    animation: move 2s ease-out;
+    animation: move 1.1s ease-out;
 }
 
 .bg-marquee:hover {
@@ -67,5 +63,11 @@ body {
     to {
         opacity: 0;
         transform: translateX(750%) rotate(30deg);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bg-marquee {
+        width: 100vw;
     }
 }
